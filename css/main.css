@@ -1,0 +1,134 @@
+@import './reset.css';
+
+body {
+    font-family: Arial, '微軟正黑體', Helvetica, Sans-serif;
+}
+
+.menu {
+	height: 100vh;
+	width: 160px;
+	background-color: #7C7C7C;
+	float: left;
+	position: relative;
+}
+
+.menu .title {
+	padding: 20px 15px;
+	background-color: #4A4A4A;
+}
+
+.menu .title span {
+	font-size: 2em;
+	color: #ffffff;
+	margin-left: 20px;
+}
+
+.menu .title .imgStyle {
+	width: 80px;
+}
+
+.menu .title .min_picture {	
+	background: url('../images/dasu.png') no-repeat;
+	background-size: 70px auto;
+	height: 70px;
+	width: 70px;
+	border-radius: 50px;
+	display: inline-block;
+	/*margin: 15px 15px;*/
+}
+
+.menu ul li {
+	font-size: 1.3em;
+	font-width: 300;
+	padding: 10px 30px;
+	color: #ffffff;
+	transition: 0.25s;
+}
+
+.menu ul li:hover {
+	background-color: #ff6600;
+	color: #3a3a3a;
+}
+
+.content {
+	width: 100vw;
+	height: 100vh;
+	/*background-color: rgb(226, 128, 128);*/
+}
+
+.content .banner {
+	width: 100%;
+	height: 100vh;
+	/*background-color: rgb(33, 155, 235);*/
+	background: url('../images/coffee2.jpg') 15px no-repeat;
+	background-size: cover;
+}
+
+.div {
+	margin-top: 30px;
+	margin-left: 80px;
+}
+
+.content .banner .picture {
+	background: url('../images/ima.jpg') no-repeat;
+	background-size: 150px auto;
+	height: 150px;
+	width: 150px;
+	display: inline-block;
+	border-radius: 30px;
+	margin: 10px;
+}
+
+.div span {
+	font-size: 0.6em;
+}
+
+.content .banner div {
+	color: #ffffff;
+	/*font-size: 1.5em;*/
+	display: inline-block;
+	vertical-align: top;
+	width: 360px;
+}
+
+
+.content .link {
+	width: 60%;
+	position: relative ;
+	left: 0;
+	bottom: 0;
+	/*text-align: left*/
+}
+
+.content .link div {
+	height: 24px;
+	width: 24px;
+	display: inline-block;
+	/*border: 1px solid #ffffff;*/
+	padding: 0px;
+	/*border-radius: 50px;*/
+	margin: 5px 3px;
+}
+
+.content .link .fb {
+	background: url('../images/facebook-logo.png') no-repeat;
+	background-size: 22px auto;
+}
+
+.content .link .github {
+	background: url('../images/GitHub-Light-32.png') no-repeat;
+	background-size: 22px auto;
+}
+
+.content .link .twitter {
+	background: url('../images/twitter-logo.png') no-repeat;
+	background-size: 22px auto;
+}
+
+
+.content .news {
+	/*background-color: rgb(200, 225, 65);*/	
+	padding: 10px;
+	margin: 10px;
+	display: inline-block;
+}
