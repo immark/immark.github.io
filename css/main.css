@@ -1,4 +1,7 @@
 @import './reset.css';
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-family: Arial, '微軟正黑體', Helvetica, Sans-serif;
@@ -51,13 +54,13 @@ body {
 }
 
 .content {
-	width: 100vw;
+	/*width: 100vw;*/
 	height: 100vh;
-	/*background-color: rgb(226, 128, 128);*/
+	/*background-color: rgb(255, 255, 192);*/
 }
 
 .content .banner {
-	width: 100%;
+	/*width: 100vw;*/
 	height: 240px;
 	/*background-color: rgb(33, 155, 235);*/
 	background: url('../images/coffee2.jpg') 0px no-repeat;
@@ -156,5 +159,48 @@ li a:hover {
     background-color: #4CAF50;
     text-decoration: none;
 	color: white;
+}
 
+/* Create three equal columns that sits next to each other */
+.column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+    height: 100px; /* Should be removed. Only for demonstration */
+	margin:0px;
+	background-color: #fff;
+}
+
+/* Container for flexboxes */
+.row {
+    display: -webkit-flex;
+    display: flex;
+	margin-left:0px;
+	margin-right:0px;
+    text-align: center;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+	vertical-align:bottom;
 }
